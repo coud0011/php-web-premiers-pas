@@ -44,3 +44,13 @@
 
 Dans la partie suivante, on a pu constater que l'on peut
 modifer la valeur du nombre directement dans l'url.  
+
+Si on entre quelque chose qui n'est pas un nombre,
+on obtient une erreur de type.  
+En effet, on a besoin d'un nombre pour les calculs.  
+is_int() ne sera d'aucune aide car c'est une chaîne qui est renvoyée.
+Utilisation de ctype_digit()  
+
+Si on enlève la condition ?n="...", on a encore une erreur
+car n n'est pas défini au début.
+

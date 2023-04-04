@@ -2,9 +2,18 @@
 
 declare(strict_types=1);
 
-$n=$_GET['n'];
-$titre = "Table de multiplication de $n";
+if(isset($_GET['n'])){
+    $n=$_GET['n'];
+}
+else{
+    $n=0;
+}
 
+
+$titre = "Table de multiplication de $n";
+if(!ctype_digit($n)){
+    $n=0;
+}
 
 $html=<<<HTML
 <!doctype html>
