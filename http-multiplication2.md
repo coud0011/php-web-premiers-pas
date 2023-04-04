@@ -1,5 +1,5 @@
 - Saisie de l'url http://localhost:8000/multiplication2.php  
-- Ouverture de la connexion par le client  
+- Ouverture de la connection par le client  
   - Préparation de la requête  
   - Lancement d'une requête HTTP GET par mon navigateur  
   - Requête reçue par localhost:8000
