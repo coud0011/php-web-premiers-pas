@@ -12,8 +12,9 @@
       celle-ci est envoyée avec le code 200
 - Fermeture de la connection par le serveur
 - Dans le formulaire affiché je rentre 42 et clique sur le submit
+- L'URL se transforme donc en rajoutant ?n=42 après
 - Réouverture de la connection par le navigateur
-  - Préparation de la requête HTTP GET contenue dans le formulaire avec la valeur 42 inscrite et le submit pour le fichier multiplication3.php
+  - Préparation de la requête HTTP GET contenue dans le formulaire avec la valeur 42 inscrite pour le fichier multiplication3.php
   - Lancement de la requête
   - Requête reçue par localhost:8000
     - Traitement de la requête
