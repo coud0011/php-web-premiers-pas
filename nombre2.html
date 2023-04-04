@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="nombre.css">
+    <title>Génération d'une table de multiplication</title>
+</head>
+<body>
+    <h1>Génération d'une table de multiplication</h1>
+    <form name="Choose a number" method="GET" action="/multiplication3.php">
+        <label>
+            Saisissez un nombre entier en base 10
+            <input name="n" type="number" min="0" step="1" required>
+        </label>
+        <label>
+            <input type="submit" value="Calculer la table de multiplication !">
+        </label>
+    </form>
+    <a href="http://localhost:8000/multiplication3.php?n=12" >Voir la table des 12</a>
+    <a href="http://localhost:8000/multiplication3.php?n=42" >Voir la table des 42</a>
+</body>
+</html>
