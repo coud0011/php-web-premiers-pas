@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-$titre = 'Exemple'
+$titre = 'Exemple';
 
 /*
  * Rappel : le marqueur de fin HEREDOC s'appelle HTML pour indiquer
