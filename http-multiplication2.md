@@ -1,0 +1,27 @@
+- Saisie de l'url http://localhost:8000/multiplication2.php  
+- Ouverture de la connexion par le client  
+  - Préparation de la requête  
+  - Lancement d'une requête HTTP GET par mon navigateur  
+  - Requête reçue par localhost:8000
+    - Traitement de la requête
+    - Le serveur cherche la ressource demandée : "/multiplication2.php"  
+    - La ressource contient du code PHP  
+    - Demande d'exécution du code PHP  
+    - Le module PHP exécute le script et retourne la charge utile avec echo
+  - Construction de la réponse HTTP,
+  celle-ci est envoyée avec le code 200
+- Fermeture de la connection par le serveur
+- Dans la réponse html, il y a un link avec une feuille de style en css :  
+multiplication2.css
+-  Le navigateur rouvre donc la connection avec le serveur
+   - Il prépare une deuxième requête
+   - Envoi de la requête HTTP GET pour le fichier multiplication2.css  
+   - Requête reçue par localhost:8000
+     - Traitement de la requête
+     - Le serveur cherche la ressource demandée : "/multiplication.css"  
+   - Construction de la réponse HTTP, celle-ci est envoyée avec le code 200  
+- Fermeture de la connection par le serveur  
+- Le navigateur rouvre la connection pour demander la présence d'une icone
+- Mais le serveur n'en a pas retour : 404 Not Found
+- Le serveur referme la connection
+- Le navigateur affiche le résultat
