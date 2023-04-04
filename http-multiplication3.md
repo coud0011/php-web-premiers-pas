@@ -38,3 +38,9 @@
 - Mais le serveur n'en a pas retour : 404 Not Found
 - Le serveur referme la connection
 - Le navigateur affiche le résultat
+
+
+
+
+Dans la partie suivante, on a pu constater que l'on peut
+modifer la valeur du nombre directement dans l'url.  
