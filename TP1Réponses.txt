@@ -1,0 +1,4 @@
+PHPWEB
+
+1.1) Lancer le serveur php -d diplay_errors -S localhost:8000
+
