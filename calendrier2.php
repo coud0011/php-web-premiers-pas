@@ -5,8 +5,8 @@ require_once("calendrier.function.php");
 setlocale(LC_TIME, 'fr_FR.utf8');
 // Le jour courant
 $date = new DateTimeImmutable();
-$mois=(int) IntlDateFormatter::formatObject($date,'M');
-$annee=(int) IntlDateFormatter::formatObject($date,'YYYY');
+$month=(int) IntlDateFormatter::formatObject($date,'M');
+$year=(int) IntlDateFormatter::formatObject($date,'YYYY');
 $htmlT= <<<HTML
 <!DOCTYPE html>
 <html>
@@ -18,7 +18,7 @@ $htmlT= <<<HTML
     <body>
         <h1>Calendrier</h1>
 HTML;
-$htmlT.=calendrier($mois,$annee);
+$htmlT.=calendrier($month,$year);
 $htmlT.=  <<<HTML
     </body>
 </html>
