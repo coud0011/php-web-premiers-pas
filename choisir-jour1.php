@@ -15,11 +15,11 @@ $html = <<<HTML
         <h1>Les jours de la semaine</h1>
         <form name='formulaire' action='jour.php' method='POST'>
             <label>
-                <select name="day">
+                <select name="day" required>
                     <option value="">Choisissez...</option>
 HTML;
-foreach($dayList as $dayN){
-    $html .="<option value='$dayN'>$dayN</option>\n";
+foreach($dayList as $dayNumber => $dayN){
+    $html .="<option value='$dayNumber'>$dayN</option>\n";
 }
 $html.= <<<HTML
             </label>
