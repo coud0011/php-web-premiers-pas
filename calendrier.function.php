@@ -18,16 +18,7 @@ function calendrier(int $mois, int $annee, bool $afficheAnnee=true): string
     $nombreDeJoursDuMois = (int) $dateTime->format('t');
 
     $html= <<<HTML
-<!DOCTYPE html>
-<html>
-    <head>
-      <meta charset="UTF-8">
-      <link rel="stylesheet" href="calendrier.css">
-      <title>Calendrier</title>
-    </head>
-    <body>
-        <h1>Calendrier</h1>
-        <table>
+<table>
 HTML;
     $html.="\n<tr><th colspan='7'>$nomMois</th></tr>\n";
     $html.="<tr>";
@@ -67,8 +58,6 @@ HTML;
 
     $html.= <<<HTML
         </table>
-    </body>
-</html>
 HTML;
     return $html;
 }

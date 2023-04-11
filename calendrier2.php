@@ -7,5 +7,20 @@ setlocale(LC_TIME, 'fr_FR.utf8');
 $date = new DateTimeImmutable();
 $mois=(int) IntlDateFormatter::formatObject($date,'M');
 $annee=(int) IntlDateFormatter::formatObject($date,'YYYY');
-$html=calendrier($mois,$annee);
-echo $html;
+$htmlT= <<<HTML
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="calendrier.css">
+      <title>Calendrier</title>
+    </head>
+    <body>
+        <h1>Calendrier</h1>
+HTML;
+$htmlT.=calendrier($mois,$annee);
+$htmlT.=  <<<HTML
+    </body>
+</html>
+HTML;
+echo $htmlT;
