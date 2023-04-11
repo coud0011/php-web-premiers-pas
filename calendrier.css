@@ -11,3 +11,6 @@ th{
     background-color: lightgray;
     text-align: center;
 }
+td.weekend{
+    background-color: lightgreen;
+}
